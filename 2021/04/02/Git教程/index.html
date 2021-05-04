@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="XiaMoHuaHuo_CN"><title>Git教程 · XiaMoHuaHuo_CN's Blog</title><meta name="description" content="安装
+首先安装Git
+Git官网：http://git-scm.com/
+一路Next安装即可。
+然后你的右键菜单会多出下面两个按键：
+Git GUI Here
+Git Bash Here
+配置Git
+我们先在电脑里找一块地方存放本地仓库(创建文件夹),然后在文件夹里右键点击Git Bash Her"><meta name="keywords" content="XiaMoHuaHuo_CN,XiaMoHuaHuo-CN"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="https://z3.ax1x.com/2021/04/02/cmcY1H.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">XiaMoHuaHuo_CN's Blog</a></h3><div class="description"><p>XiaMoHuaHuo_CN’s Blog</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://twitter.com/xiamohuahuo"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" rel="noopener" href="http://weibo.com/u/7534665253"><i class="fa fa-weibo"></i></a></li><li><a target="_blank" rel="noopener" href="http://bilibili.com/372657168"><i class="fa fa-bilibili"></i></a></li><li><a target="_blank" rel="noopener" href="http://github.com/XiaMoHuaHuo-CN"><i class="fa fa-github"></i></a></li></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">主页</a></li><li><a href="/about">关于</a></li><li><a href="/archives">归档</a></li><li><a href="/links">友情链接</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2549619802&amp;spec=640"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>Git教程</a></h3></div><div class="post-content"><img src="https://z3.ax1x.com/2021/04/02/cmybiF.png" />
+<h1>安装</h1>
+<p>首先安装Git<br />
+Git官网：<a target="_blank" rel="noopener" href="http://git-scm.com/">http://git-scm.com/</a><br />
+一路Next安装即可。<br />
+然后你的右键菜单会多出下面两个按键：<br />
+<b>Git GUI Here<br />
+Git Bash Here</b></p>
+<h1>配置Git</h1>
+<p>我们先在电脑里找一块地方存放本地仓库(创建文件夹),然后在文件夹里右键点击<b>Git Bash Here</b>进入Git命令行，如下<br />
+<img src="https://z3.ax1x.com/2021/04/02/cm6VsI.png" /><br />
+为了保险起见，我们先执行git init命令:<br />
+<b>$ git init</b><br />
+<img src="https://z3.ax1x.com/2021/04/02/cm6FRH.png" /><br />
+为了把本地的仓库传到github，还需要配置ssh key。<br />
+在本地创建ssh key的命令:<br />
+<b>$ ssh-keygen -t rsa -C "&lt;你注册github的邮箱&gt;"</b><br />
+直接点回车，说明会在默认文件id_rsa上生成ssh key。 <br />
+然后系统要求输入密码，直接按回车表示不设密码,重复密码时也是直接回车，之后提示你ssh key已经生成成功。<br />
+<img src="https://z3.ax1x.com/2021/04/02/cm6iJe.png" /><br />
+然后我们进入提示的地址下查看ssh key文件。 地址是<b>C:\Users\<电脑用户名>\.ssh</b>,比如<b>C:\Users\Administrator\.ssh</b>(注：部分电脑将&quot;Users&quot;文件夹显示为&quot;用户&quot;文件夹)<br />
+用记事本等软件打开<b>id_rsa.pub</b>，复制里面的key。里面的key是一对看不懂的字符数字组合，不用管它，直接复制。<br />
+<img src="https://z3.ax1x.com/2021/04/02/cm6kzd.png" /><br />
+登录Github后打开<a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a>，<b>点击New SSH Key</b>，title随便填，粘贴key。<br />
+验证是否成功，在Git Bash输入：<br />
+<b>$ ssh -T git@github.com</b><br />
+回车就会看到：Hi &lt;Github名&gt;! You’ve successfully authenticated, but GitHub does not provide shell access。这就表示已成功连上github。<br />
+<img src="https://z3.ax1x.com/2021/04/02/cm6ZLt.png" /><br />
+接下来我们要做的就是把本地仓库传到github上去，在此之前还需要设置username和email，因为github每次commit都会记录他们<br />
+<b>$ git config --global user.name "&lt;Github名称&gt;"</b><br />
+<b>$ git config --global user.email "&lt;你注册github的邮箱&gt;"</b><br />
+<img src="https://z3.ax1x.com/2021/04/02/cm6EQA.png" /><br />
+进入要上传的仓库，右键git bash，添加远程地址:<br />
+<b>$ git remote add origin &lt;Github仓库ssh地址&gt;</b><br />
+<b>$ git push origin &lt;Github仓库分支，默认master&gt;</b><br />
+然后在命令行输入一下命令:<br />
+<b>$ git add &lt;要上传的文件名称，全部请填*&gt;</b><br />
+<b>$ git ci -m "&lt;上传描述&gt;"</b><br />
+<b>git push</b>命令会将本地仓库推送到远程服务器。<br />
+<b>git pull</b>命令则相反。<br />
+注：首次提交，先git pull下，修改完代码后，使用git status可以查看文件的差别，使用git add 添加要commit的文件。</p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-04-02</span><i class="fa fa-tag"></i><a class="tag" href="/tags/教程/" title="教程">教程 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2021/04/02/Git教程/,XiaMoHuaHuo_CN's Blog,Git教程,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2021/04/14/%E4%BA%BA-%E6%9C%BA-%E9%AA%8C-%E8%AF%81/" title="人 机 验 证">Post Anterior</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2021/04/02/%E6%95%99%E4%BD%A0%E7%99%BD%E5%AB%96%E5%9F%9F%E5%90%8D%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93%E5%92%8CCDN%E6%9C%8D%E5%8A%A1/" title="教你白嫖域名、储存库和CDN服务">Próximo post</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="XiaMoHuaHuo_CN"><title>[原创][MCBBS]从零编写自己的开服批处理--轻松开服 · XiaMoHuaHuo_CN's Blog</title><meta name="description" content="前言
+由于批处理文件的命令非常奇怪，而搜索的用法却总是不尽人意，于是，本人决定着手写一篇基础开服批处理编写教程，方便各位新人轻松开服。
+注意：编辑bat时请使用ANSI编码，否则部分内容将出现报错、乱码等问题，甚至无法启动
+第一章 基础知识
+在开始之前，我们要了解用得到的内容。
+@echo
+这是一个"><meta name="keywords" content="XiaMoHuaHuo_CN,XiaMoHuaHuo-CN"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="https://z3.ax1x.com/2021/04/02/cmcY1H.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">XiaMoHuaHuo_CN's Blog</a></h3><div class="description"><p>XiaMoHuaHuo_CN’s Blog</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://twitter.com/xiamohuahuo"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" rel="noopener" href="http://weibo.com/u/7534665253"><i class="fa fa-weibo"></i></a></li><li><a target="_blank" rel="noopener" href="http://bilibili.com/372657168"><i class="fa fa-bilibili"></i></a></li><li><a target="_blank" rel="noopener" href="http://github.com/XiaMoHuaHuo-CN"><i class="fa fa-github"></i></a></li></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">主页</a></li><li><a href="/about">关于</a></li><li><a href="/archives">归档</a></li><li><a href="/links">友情链接</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2549619802&amp;spec=640"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>[原创][MCBBS]从零编写自己的开服批处理--轻松开服</a></h3></div><div class="post-content"><p><img src="https://z3.ax1x.com/2021/04/02/cmyqG4.png" /><br /></p>
+<h1>前言</h1>
+<p>由于批处理文件的命令非常奇怪，而搜索的用法却总是不尽人意，于是，本人决定着手写一篇基础开服批处理编写教程，方便各位新人轻松开服。<br />
+<font color="red">注意：编辑bat时请使用<i><u>ANSI</u></i>编码，否则部分内容将出现报错、乱码等问题，甚至无法启动</font></p>
+<h1>第一章 基础知识</h1>
+<p>在开始之前，我们要了解用得到的内容。<br />
+<font color="blue"><b>@echo</b></font><br />
+这是一个回执的命令，它用来控制控制台的回执。<br />
+<font color="blue"><b>echo</b></font><br />
+这是一个回执的命令。它能在控制台中添加一个回执。<br />
+<font color="blue"><b>set</b></font><br />
+这是一个设置变量的命令。这个命令可以用来优化Java参数。<br />
+<font color="blue"><b>goto</b></font><br />
+跳转命令。多用于崩溃自重启。<br />
+<font color="blue"><b>Java</b></font><br />
+调起Java进程。开服必备命令。<br />
+<font color="blue"><b>title</b></font><br />
+这是一个标题命令。设置控制台的窗口标题。<br />
+<font color="blue"><b>color</b></font><br />
+这是一个颜色命令。用于设置控制台背景与文字的颜色。<br />
+<font color="blue"><b>timeout</b></font><br />
+这是一个等待命令。以秒为单位。这个命令用于自重启等待。<br />
+<font color="blue"><b>choice</b></font><br />
+同上,这是一个等待命令。以秒为单位。这个命令用于自重启等待。</p>
+
+<h1>第二章 初步启航</h1>
+<p>本章开始正式教学。如果还有不懂，建议先消化第一章的内容。<br />
+开服最简单的方式就是添加Java参数。如下所示：<br />
+<b>java -Xms&lt;最小内存&gt; -Xmx&lt;最大内存&gt; -jar &lt;开服核心名&gt;</b><br />
+但是这样似乎过于简陋。对于我们，一定想进行优化和个性化。<br />
+在“java -Xms&lt;最小内存&gt; -Xmx&lt;最大内存&gt; -jar &lt;开服核心名&gt;”中，如果使用高级Java参数，就会导致修改不方便，或者导致误删等问题。那么，我们用set命令来解决。<br />
+set命令可以设置变量，那么我们只要设置+调用变量，即可轻松解决问题。如下所示：<br />
+<b>set Xms=&lt;最小内存&gt;</b><br />
+<b>set Xmx=&lt;最大内存&gt;</b><br />
+<b>set jar=&lt;开服核心名，无需后缀&gt;</b><br />
+有了变量，那么我们就要调用变量。我们把变量调用至Java参数中。如下所示：<br />
+<b>java -Xms%Xms% -Xmx%Xmx% -jar %jar%.jar</b><br />
+现在，你已经学会了最基础的内容，本章到此完结。</p>
+
+<h1>第三章 小有学识</h1>
+<p><img src="https://www.mcmod.cn/pages/tools/achievements/images/achievements/201504_ndqqLSUf.png" /><br />
+服务器重启总是要手动？试试goto指令吧。如下所示:<br />
+<b>:1</b><br />
+<b>goto 1</b><br />
+这样就可以不断跳回1处。goto命令用:&lt;标记名&gt;来做标记，牢记此点可完善服务器。<br />
+我们把参数加到中间，如下所示:<br />
+<b>:1</b><br />
+<b>set Xms=&lt;最小内存&gt;</b><br />
+<b>set Xmx=&lt;最大内存&gt;</b><br />
+<b>set jar=&lt;开服核心名，无需后缀&gt;</b><br />
+<b>java -Xms%Xms% -Xmx%Xmx% -jar %jar%.jar</b><br />
+<b>goto 1</b><br />
+重启是解决了，可是关服好像也会重启？试试timeout或者choice吧。如下所示:<br />
+<span>timeout:</span><br />
+<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
+<b>timeout /t %goto_time%</b><br />
+<span>choice:</span><br />
+<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
+<b>choice /c a /t %goto_time% /d a /n&gt;nul</b><br />
+这样不就解决了吗。我们把它加到参数中，如下所示:<br />
+<span>timeout:</span><br />
+<b>:1</b><br />
+<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
+<b>(略)</b><br />
+<b>timeout /t %goto_time%</b><br />
+<b>goto 1</b><br />
+<span>choice:</span><br />
+<b>:1</b><br />
+<b>set goto_time=&lt;自重启等待秒数&gt;</b><br />
+<b>(略)</b><br />
+<b>choice /c a /t %goto_time% /d a /n&gt;nul</b><br />
+<b>goto 1</b><br />
+这样就有了一个高级的批处理了。但是回执似乎很烦？把@echo加进去试试吧。如下所示：<br />
+<b>@echo off</b><br />
+<b>(略)</b><br />
+现在，烦人的回执就被关掉了。<br />
+你学会了这些内容，那么本章到此完结。</p>
+
+<h1>第四章 扩展内容</h1>
+<p><img src="https://www.mcmod.cn/pages/tools/achievements/images/achievements/0_qDrGhCsG.png" /><br />
+这里是第四章，扩展内容。你可以在这里学到一些扩展内容。<br />
+在这里，你将学到<font color="blue"><b>color、echo、title</b></font>三种代码的用法。<br />
+背景和文字颜色好像太单调？还是黑底白字？我们来用<font color="blue"><b>color</b></font>设置颜色吧。如下所示：<br />
+<b>color &lt;文字颜色&gt;&lt;背景颜色&gt;</b><br />
+颜色表:<br />
+<img src="https://z3.ax1x.com/2021/04/02/cmy7IU.jpg" /><br />
+听说你想增加回执？<font color="blue"><b>echo</b></font>满足你。如下所示：<br />
+<b>echo &lt;内容&gt;</b><br />
+想自定义窗口标题？这个不难，<font color="blue"><b>title</b></font>可以做到。如下所示：<br />
+<b>title &lt;标题&gt;</b><br />
+现在在你的批处理中加入他们做一个更高级的批处理来开服吧。<br />
+本章到此完结。</p>
+<h1>扩展教程</h1>
+<p><font size="5"><b>扩展1：使用Notepad++编辑</b></font><br />
+Windows自带的记事本的编码方式难改，而使用<b>Notepad++</b>可以轻松调节编码方式，而且其填充功能可以轻松填入代码，无需频繁输入。</p>
+<h1>白嫖区！！！</h1>
+<p>白嫖bat↓↓↓纯手打<br />
+<a target="_blank" rel="noopener" href="https://share.weiyun.com/V2R1rFBL">https://share.weiyun.com/V2R1rFBL</a><br />
+<br/>
+开服高级参数：<br/>
+<b>-Xms&lt;最大内存&gt; -Xmx&lt;最小内存&gt; -XX:+UseG1GC -server -XX:+UseFastAccessorMethods -XX:+OptimizeStringConcat -XX:+AggressiveOpts -XX:MaxGCPauseMillis=10 -XX:+UseStringDeduplication -jar &lt;核心名&gt;.jar</b></p></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-03-27</span><i class="fa fa-tag"></i><a class="tag" href="/tags/MineCraft-nbsp-Server/" title="MineCraft&amp;nbsp;Server">MineCraft&amp;nbsp;Server </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2021/03/27/原创-MCBBS-从零编写自己的开服批处理-轻松开服/,XiaMoHuaHuo_CN's Blog,[原创][MCBBS]从零编写自己的开服批处理--轻松开服,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2021/03/27/%E5%8E%9F%E5%88%9B-MCBBS-CatServer%E5%B0%8F%E5%9E%8B%E6%95%B4%E5%90%88%E6%9C%8D%E5%8A%A1%E7%AB%AF/" title="[原创][MCBBS]CatServer小型整合服务端">Post Anterior</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2021/03/21/Hexo%20Blog%E5%AE%89%E8%A3%85/" title="Hexo Blog安装">Próximo post</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>

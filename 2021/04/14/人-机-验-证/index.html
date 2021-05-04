@@ -1,0 +1,571 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="XiaMoHuaHuo_CN"><title>人 机 验 证 · XiaMoHuaHuo_CN's Blog</title><meta name="description" content="适当娱乐[雾]
+
+.vaptcha-init-main {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.vaptcha-init-loading {
+    disp"><meta name="keywords" content="XiaMoHuaHuo_CN,XiaMoHuaHuo-CN"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="https://z3.ax1x.com/2021/04/02/cmcY1H.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">XiaMoHuaHuo_CN's Blog</a></h3><div class="description"><p>XiaMoHuaHuo_CN’s Blog</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://twitter.com/xiamohuahuo"><i class="fa fa-twitter"></i></a></li><li><a target="_blank" rel="noopener" href="http://weibo.com/u/7534665253"><i class="fa fa-weibo"></i></a></li><li><a target="_blank" rel="noopener" href="http://bilibili.com/372657168"><i class="fa fa-bilibili"></i></a></li><li><a target="_blank" rel="noopener" href="http://github.com/XiaMoHuaHuo-CN"><i class="fa fa-github"></i></a></li></ul><div class="footer"><a target="_blank" href="/"><span>Theme by </span></a><a target="_blank" rel="noopener" href="https://www.caicai.me"> CaiCai </a><span>&</span><a target="_blank" rel="noopener" href="https://github.com/Ben02/hexo-theme-Anatole"> Ben</a><div class="by_farbox"><a href="https://hexo.io/zh-cn/" target="_blank">Proudly published with Hexo&#65281;</a></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">主页</a></li><li><a href="/about">关于</a></li><li><a href="/archives">归档</a></li><li><a href="/links">友情链接</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="https://q2.qlogo.cn/headimg_dl?dst_uin=2549619802&amp;spec=640"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>人 机 验 证</a></h3></div><div class="post-content"><p><img src="https://z3.ax1x.com/2021/04/03/cuQYOs.png" /><br /></p>
+<p>适当娱乐[雾]</p>
+<style>
+.vaptcha-init-main {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+}
+.vaptcha-init-loading {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+​
+.vaptcha-init-loading > a {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: none;
+}
+​
+.vaptcha-init-loading > a img {
+    vertical-align: middle;
+}
+​
+.vaptcha-init-loading .vaptcha-text {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #cccccc;
+    vertical-align: middle;
+}
+</style>
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br />
+
+<!-- 点击式按钮建议高度介于36px与46px  -->
+<center>
+<div data-vid="606732a3311390549c9c5f1c" style="width: 320px;height: 40px;">
+    <div class="vaptcha-init-main">
+        <div class="vaptcha-init-loading">
+            <a href="/" target="_blank">
+                <img src="https://cdn.vaptcha.com/vaptcha-loading.gif" />
+            </a>
+            <span class="vaptcha-text">Vaptcha启动中...</span>
+        </div>
+    </div>
+</div>
+</center>
+<script src="https://v.vaptcha.com/v3.js"></script>
+<script>
+vaptcha({
+  vid: '606732a3311390549c9c5f1c', // 验证单元id
+  type: 'click', // 显示类型 点击式
+  scene: 0, // 场景值 默认0
+  container: 'Element', // 容器，可为Element 或者 selector
+  offline_server: 'https://huahuo-cn.tk', //离线模式服务端地址，若尚未配置离线模式，请填写任意地址即可。
+  //可选参数
+  lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+  https: true, // 使用https 默认 true
+  style: 'dark' //按钮样式 默认dark，可选值 dark,light
+  color: '#57ABFF' //按钮颜色 默认值#57ABFF
+}).then(function (vaptchaObj) {
+  obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+  vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+  //获取token的方式一：
+  //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加token值
+  //获取token的方式二：
+  vaptchaObj.listen('pass', function () {
+    // 验证成功进行后续操作
+    var data = {
+    abcd
+      //表单数据
+      token: vaptchaObj.getToken(),
+    }
+    $.post('login', data, function (r) {
+      if (r.code !== 200) {
+        console.log('登录失败')
+        vaptchaObj.reset() //重置验证码
+      }
+    })
+  })
+  //关闭验证弹窗时触发
+  vaptchaObj.listen('close', function () {
+    //验证弹窗关闭触发
+  })
+})
+</script><br /></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2021-04-14</span><i class="fa fa-tag"></i><a class="tag" href="/tags/娱乐/" title="娱乐">娱乐 </a></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2021/04/14/人-机-验-证/,XiaMoHuaHuo_CN's Blog,人 机 验 证,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2021/04/02/Git%E6%95%99%E7%A8%8B/" title="Git教程">Próximo post</a></li></ul></div></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
