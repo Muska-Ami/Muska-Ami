@@ -8,7 +8,7 @@
 ## 喜欢玩Minecraft
 - XBox代号 HuaHuo CN  
 - Java正版名称 XiaMoHuaHuo_CN  
-我的Minecraft服务器 😉[https://spcraft.ml](https://spcraft.ml)
+- 我的Minecraft服务器 😉[https://spcraft.ml](https://spcraft.ml)
 
 ### Stats
 <img src="https://github-readme-stats.vercel.app/api?username=XiaMoHuaHuo-CN&show_icons=true&theme=Gradient&bg_color=66CCFF,FFC0CB,66CCFF" style="width: 100%" /> 
