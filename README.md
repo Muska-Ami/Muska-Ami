@@ -10,9 +10,13 @@
 
 ## 我会的语言
 
+已学会的:  
 ![](https://img.shields.io/badge/-HTML5-e34f26?style=flat-square&logo=HTML5&logoColor=fff)
 ![](https://img.shields.io/badge/-CSS3-359CD6?style=flat-square&logo=CSS3&logoColor=fff)
 ![](https://img.shields.io/badge/-JavaScript-FFDA3E?style=flat-square&logo=JavaScript&logoColor=fff)
+
+正在学习:  
+![](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=fff)
 
 ## 喜欢玩Minecraft
 
