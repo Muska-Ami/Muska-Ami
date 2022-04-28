@@ -18,6 +18,7 @@
 
 正在学习:  
 ![](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=fff)
+![](https://img.shields.io/badge/-Pug-CC9900?style=flat-square&logo=Pug&logoColor=fff)
 
 ## 喜欢玩Minecraft
 
