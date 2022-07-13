@@ -17,7 +17,7 @@
 ![](https://img.shields.io/badge/-PHP-333399?style=flat-square&logo=PHP&logoColor=fff)
 
 正在学习:  
-![](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=Java&logoColor=fff)
+![](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=openjdk&logoColor=fff)
 ![](https://img.shields.io/badge/Kotlin-%230095D5.svg?style=flat-square&logo=Kotlin&logoColor=fff)
 ![](https://img.shields.io/badge/-Pug-CC9900?style=flat-square&logo=Pug&logoColor=fff)
 
