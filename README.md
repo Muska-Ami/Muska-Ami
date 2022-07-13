@@ -21,7 +21,7 @@
 ![](https://img.shields.io/badge/Kotlin-%230095D5.svg?style=flat-square&logo=Kotlin&logoColor=fff)
 ![](https://img.shields.io/badge/-Pug-CC9900?style=flat-square&logo=Pug&logoColor=fff)
 
-*已经对Kotlin失去信心XD
+*已经对Kotlin失去信心XD*
 
 ## 喜欢玩Minecraft
 
