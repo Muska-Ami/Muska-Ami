@@ -31,7 +31,7 @@
 
 ### Stats
 
-| <img align="center" src="https://github-readme-stats.vercel.app/api?username=XiaMoHuaHuo-CN&show_icons=true&locale=cn&hide_border=true&theme=buefy" alt="Anurag's github stats" /> | <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XiaMoHuaHuo-CN&layout=compact&locale=cn&hide_border=true&theme=buefy" /> |
-| ------------- | ------------- |
 
-![view stats](https://count.getloli.com/get/@XiaMoHuaHuo-CN?theme=gelbooru)
+| <img align="center" src="https://github-readme-stats.vercel.app/api?username=XiaMoHuaHuo-CN&show_icons=true&locale=cn&hide_border=true&theme=tokyonight&bg_color=white" alt="Top Stats" /> | <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=XiaMoHuaHuo-CN&layout=compact&locale=cn&hide_border=true&theme=tokyonight&bg_color=white" alt="Language Stats" /> |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <img align="center" src="https://count.getloli.com/get/@XiaMoHuaHuo-CN?theme=gelbooru" alt="View Stats" />                                                                                 |                                                                                                                                                                                                           |
