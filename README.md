@@ -3,13 +3,13 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&pause=1000&color=55CAF7&background=54DCFF00&center=%E7%9C%9F&vCenter=%E7%9C%9F&repeat=%E7%9C%9F&width=435&lines=Keep+doing%2C+keep+loving%E2%9D%A4.)](https://git.io/typing-svg)
 你好，我是XiaMoHuaHuo_CN，一名在校学生。
 
-我的Blog：[https://huahuo-cn.tk](https://huahuo-cn.tk)
-我的Docs：[https://docs.huahuo-cn.tk](https://docs.huahuo-cn.tk/)
+- 我的Blog：[https://huahuo-cn.tk](https://huahuo-cn.tk)
+- 我的Docs：[https://docs.huahuo-cn.tk](https://docs.huahuo-cn.tk/)
 ### Sponsors
 
 如果你想支持我，或是想请我喝杯coffee，请赞助我：
 
-[https://sponsors.huahuo-cn.tk](https://sponsors.huahuo-cn.tk/)
+- Sponsors：[https://sponsors.huahuo-cn.tk](https://sponsors.huahuo-cn.tk/)
 
 ### Stats
 
