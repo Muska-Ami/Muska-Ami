@@ -8,7 +8,7 @@
 - 我的Docs：[https://docs.huahuo-cn.tk](https://docs.huahuo-cn.tk/)
 
 <div>
-  <img title="Thanks for @HuanMeng-official" align=right src="https://media-fs.huahuo-cn.tk/api/raw/?path=/descforme/mkxdxmcn.png">
+  <img title="Thanks for @HuanMeng-official" align=right width="300px" src="https://media-fs.huahuo-cn.tk/api/raw/?path=/descforme/mkxdxmcn.png">
 </div>
 
 ### Sponsors
