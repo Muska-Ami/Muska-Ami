@@ -4,8 +4,8 @@
 
 你好，我是XiaMoHuaHuo_CN，一名在校学生。
 
-- 我的Blog：[https://huahuo-cn.tk](https://huahuo-cn.tk)
-- 我的Docs：[https://docs.huahuo-cn.tk](https://docs.huahuo-cn.tk/)
+- 我的Blog：[https://ovome.icu](https://ovome.icu)
+- 我的Docs：[https://docs.ovome.icu](https://docs.ovome.icu/)
 
 <div>
   <img title="Thanks for @HuanMeng-official" align=right width="150px" src="https://media-fs.huahuo-cn.tk/api/raw/?path=/descforme/mkxdxmcn.png">
