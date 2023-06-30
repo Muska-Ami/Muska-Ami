@@ -8,14 +8,15 @@
 - 我的Docs：[https://docs.ovome.icu](https://docs.ovome.icu/)
 
 <div>
-  <img title="Thanks for @HuanMeng-official" align=right width="150px" src="https://media-fs.huahuo-cn.tk/api/raw/?path=/descforme/mkxdxmcn.png">
+  <img title="Thanks for @HuanMeng-official" align=right width="150px" src="https://pan.ovome.icu/f/B4Cz/%E8%BF%99%E4%B8%8D%E7%A7%91%E5%AD%A6.png">
 </div>
 
 ### Sponsors
 
 如果你想支持我，或是想请我喝杯coffee，请赞助我：
 
-- Sponsors：[https://sponsors.huahuo-cn.tk](https://sponsors.huahuo-cn.tk/)
+-
+ Sponsors：[https://sponsors.huahuo-cn.tk](https://sponsors.huahuo-cn.tk/)
 
 ### Stats
 
