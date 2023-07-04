@@ -4,7 +4,7 @@
 
 你好，我是XiaMoHuaHuo_CN，一名在校学生。
 
-- 我的Blog：[https://ovome.icu](https://ovome.icu)
+- 我的Blog：[https://blog.ovome.icu](https://blog.ovome.icu)
 - 我的Docs：[https://docs.ovome.icu](https://docs.ovome.icu/)
 
 <div>
