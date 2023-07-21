@@ -4,11 +4,11 @@
 
 你好，我是XiaMoHuaHuo_CN，一名在校学生。
 
-- 我的Blog：[https://blog.ovome.icu](https://blog.ovome.icu)
+- 我的Blog：[https://blog.1l1.icu](https://blog.1l1.icu)
 - 我的Docs：[https://docs.ovome.icu](https://docs.ovome.icu/)
 
 <div>
-  <img title="Thanks for @HuanMeng-official" align=right width="150px" src="https://pan.ovome.icu/f/B4Cz/%E8%BF%99%E4%B8%8D%E7%A7%91%E5%AD%A6.png">
+  <img title="Thanks for @HuanMeng-official" align=right width="150px" src="https://pan.1l1.icu/f/B4Cz/%E8%BF%99%E4%B8%8D%E7%A7%91%E5%AD%A6.png">
 </div>
 
 ### Sponsors
