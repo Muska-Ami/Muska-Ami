@@ -23,3 +23,4 @@
 ![Topic Stats](https://github-readme-stats.vercel.app/api?username=XiaMoHuaHuo-CN&show_icons=true&locale=cn&hide_border=true&theme=tokyonight&bg_color=white)
 ![Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=XiaMoHuaHuo-CN&layout=compact&locale=cn&hide_border=true&theme=tokyonight&bg_color=white)
 ![Commit Stats](https://github-readme-activity-graph.vercel.app/graph?username=XiaMoHuaHuo-CN&theme=react-dark&bg_color=white&point=66ccff)
+![Metrics](https://metrics.lecoq.io/XiaMoHuaHuo-CN?template=classic&gists=1&code=1&isocalendar=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&isocalendar=false&isocalendar.duration=half-year&code=false&code.lines=12&code.load=400&code.days=3&code.visibility=public&gists=false&config.timezone=Asia%2FShanghai)
