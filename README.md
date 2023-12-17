@@ -13,6 +13,6 @@ Fingerprint = F5E7A133761A26ADFBFD876CB97C125A347B35ED
 ```
 [GitHub](https://github.com/Muska-Ami.gpg)
 
-### SSH Public Keys
+#### SSH Public Keys
 
 [GitHub](https://github.com/Muska-Ami.keys)
