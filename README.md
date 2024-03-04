@@ -8,8 +8,10 @@
 
 #### Systems
 
-![Static Badge](https://img.shields.io/badge/Windows%2011%20Insider%20Preview-%20?style=flat-square&logo=windows11&logoColor=white&color=blue)
+![Static Badge](https://img.shields.io/badge/Windows%2011-%20?style=flat-square&logo=windows11&logoColor=white&color=0078D4)
 ![Static Badge](https://img.shields.io/badge/WSL-%20?style=flat-square&logo=linux&logoColor=white&color=yellow)
+![Static Badge](https://img.shields.io/badge/Debian%2012-%20?style=flat-square&logo=debian&logoColor=white&color=A81D33)
+![Static Badge](https://img.shields.io/badge/Kali%20Linux-%20?style=flat-square&logo=kalilinux&logoColor=white&color=%23557C94)
 
 #### Toolkits & IDEs
 
