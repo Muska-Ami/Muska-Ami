@@ -4,6 +4,33 @@
 
 你好，我是夏沫花火zzz，一名在校学生。
 
+### Developing Environment
+
+#### Systems
+
+![Static Badge](https://img.shields.io/badge/Windows%2011%20Insider%20Preview-%20?style=flat-square&logo=windows11&logoColor=white&color=blue)
+![Static Badge](https://img.shields.io/badge/WSL-%20?style=flat-square&logo=linux&logoColor=white&color=yellow)
+
+#### Toolkits & IDEs
+
+![Static Badge](https://img.shields.io/badge/Android%20Studio-%20?style=flat-square&logo=androidstudio&logoColor=white&color=deepgreen)
+![Static Badge](https://img.shields.io/badge/Intellij%20IDEA-%20?style=flat-square&logo=intellijidea&logoColor=white&color=1150fc)
+![Static Badge](https://img.shields.io/badge/Visual%20Studio%20Code-%20?style=flat-square&logo=visualstudiocode&logoColor=white&color=blue)
+
+#### Programming Languages & Fameworks...
+
+![Static Badge](https://img.shields.io/badge/Java-%20?style=flat-square&logo=openjdk&logoColor=white&color=a57829)
+![Static Badge](https://img.shields.io/badge/Kotlin-%20?style=flat-square&logo=kotlin&logoColor=white&color=7F52FF)
+![Static Badge](https://img.shields.io/badge/Dart-%20?style=flat-square&logo=dart&logoColor=white&color=0175C2)
+![Static Badge](https://img.shields.io/badge/Flutter-%20?style=flat-square&logo=flutter&logoColor=white&color=02569B)
+![Static Badge](https://img.shields.io/badge/HTML5-%20?style=flat-square&logo=html5&logoColor=white&color=E34F26)
+![Static Badge](https://img.shields.io/badge/JavaScript-%20?style=flat-square&logo=javascript&logoColor=white&color=F7DF1E)
+![Static Badge](https://img.shields.io/badge/Vue3-%20?style=flat-square&logo=vuedotjs&logoColor=white&color=4FC08D)
+![Static Badge](https://img.shields.io/badge/CSS3-%20?style=flat-square&logo=css3&logoColor=white&color=1572B6)
+![Static Badge](https://img.shields.io/badge/Node.js-%20?style=flat-square&logo=nodedotjs&logoColor=white&color=339933)
+![Static Badge](https://img.shields.io/badge/Pug-%20?style=flat-square&logo=pug&logoColor=white&color=A86454)
+![Static Badge](https://img.shields.io/badge/EJS-%20?style=flat-square&logo=ejs&logoColor=white&color=B4CA65)
+
 ### Public Keys
 
 #### GPG Public Keys
