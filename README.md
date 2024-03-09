@@ -40,7 +40,6 @@
 
 ```
 Fingerprint = 335221E5DC90373604149C608C7736197D476704
-OLD Fingerprint = F5E7A133761A26ADFBFD876CB97C125A347B35ED
 ```
 [GitHub](https://github.com/Muska-Ami.gpg)
 
