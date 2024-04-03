@@ -51,4 +51,4 @@ Fingerprint = 335221E5DC90373604149C608C7736197D476704
 
 ### Stats
 
-<img src="https://wakatime.com/share/@018c1993-fbe1-48fd-9551-91e287631e43/c9085a4e-cb1b-4506-8c3c-a892c45eed76.svg" width="100%" alt="My code stats">
+<img src="https://wakatime.com/share/@018c1993-fbe1-48fd-9551-91e287631e43/ae2b21d7-dea9-43a9-9ba3-880fb97e28ec.svg"></img>
