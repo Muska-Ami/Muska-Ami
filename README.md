@@ -12,6 +12,7 @@
 ![Static Badge](https://img.shields.io/badge/WSL-%20?style=flat-square&logo=linux&logoColor=white&color=yellow)
 ![Static Badge](https://img.shields.io/badge/Debian%2012-%20?style=flat-square&logo=debian&logoColor=white&color=A81D33)
 ![Static Badge](https://img.shields.io/badge/Kali%20Linux-%20?style=flat-square&logo=kalilinux&logoColor=white&color=%23557C94)
+![Static Badge](https://img.shields.io/badge/Manjaro%20Linux-%20?style=flat-square&logo=manjaro&logoColor=white&color=35BF5C)
 
 #### Toolkits & IDEs
 
@@ -33,6 +34,7 @@
 ![Static Badge](https://img.shields.io/badge/Node.js-%20?style=flat-square&logo=nodedotjs&logoColor=white&color=339933)
 ![Static Badge](https://img.shields.io/badge/Pug-%20?style=flat-square&logo=pug&logoColor=white&color=A86454)
 ![Static Badge](https://img.shields.io/badge/EJS-%20?style=flat-square&logo=ejs&logoColor=white&color=B4CA65)
+![Static Badge](https://img.shields.io/badge/Bun-%20?style=flat-square&logo=bun&logoColor=white&color=000000)
 
 ### Public Keys
 
