@@ -12,7 +12,6 @@
 ![Static Badge](https://img.shields.io/badge/WSL-%20?style=flat-square&logo=linux&logoColor=white&color=yellow)
 ![Static Badge](https://img.shields.io/badge/Debian%2012-%20?style=flat-square&logo=debian&logoColor=white&color=A81D33)
 ![Static Badge](https://img.shields.io/badge/Kali%20Linux-%20?style=flat-square&logo=kalilinux&logoColor=white&color=%23557C94)
-![Static Badge](https://img.shields.io/badge/Manjaro%20Linux-%20?style=flat-square&logo=manjaro&logoColor=white&color=35BF5C)
 
 #### Toolkits & IDEs
 
